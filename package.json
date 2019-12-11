@@ -1,0 +1,29 @@
+{
+  "name": "kyle-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1021s/Kyle-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1021s/Kyle-proxy/issues"
+  },
+  "homepage": "https://github.com/1021s/Kyle-proxy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
