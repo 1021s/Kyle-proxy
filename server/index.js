@@ -24,4 +24,61 @@ app.route('/api/listings/:Listing_id')
         .catch(() => res.sendStatus(500))
     }) 
 
+app.route('/Patrick-service/bundle.js')
+    .get((req, res) => {
+        rp('http://localhost:3002/bundle.js')
+        .then((body) => res.send(body))
+        .catch(() => res.sendStatus(404))
+    })
+
+app.route('/listings/:id')
+    .get((req, res) => {
+        rp(`http://localhost:3002/listings/${req.params.id}`)
+        .then((body) => res.send(body))
+        .catch(() => res.sendStatus(500))
+    })
+
+app.route('/Sayer-service/bundle.js')
+    .get((req, res) => {
+        rp('http://localhost:3003/bundle.js')
+        .then((body) => res.send(body))
+        .catch(() => res.sendStatus(404))
+    })
+
+app.route('/api/listing/:id')
+    .get((req, res) => {
+        rp(`http://localhost:3003/listing/${req.params.id}`)
+        .then((body) => res.send(body))
+        .catch(() => res.sendStatus(500))
+    })
+
+app.route('/Matthew-service/bundle.js')
+    .get((req, res) => {
+        rp('http://localhost:3004/bundle.js')
+        .then((body) => res.send(body))
+        .catch(() => res.sendStatus(404))
+    })
+
+app.route('/api/houseprices/:id')
+    .get((req, res) => {
+        rp(`http://localhost:3004/api//${req.params.id}`)
+        .then((body) => res.send(body))
+        .catch(() => res.sendStatus(500))
+    })
+
+
+app.route('/Inna-service/bundle.js')
+    .get((req, res) => {
+        rp('http://localhost:3005/bundle.js')
+        .then((body) => res.send(body))
+        .catch(() => res.sendStatus(404))
+    })
+
+app.route('/api/photos/:id')
+    .get((req, res) => {
+        rp(`http://localhost:3005/api/photos/${req.params.id}`)
+        .then((body) => res.send(body))
+        .catch(() => res.sendStatus(500))
+    })
+
 app.listen(PORT, () => console.log(`...proxy listening on PORT ${PORT}`));
