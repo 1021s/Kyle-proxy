@@ -24,7 +24,7 @@ $ npm install
 # start express server
 $ npm start
 ```
-Visit localhost:3001/
+Visit localhost:3000/
 
 
 ## <a id="requirements">Requirements</a>
