@@ -24,8 +24,8 @@ $ npm install
 # start express server
 $ npm start
 ```
-Visit localhost:3000/
-
+Visit localhost:3000/?id
+Valid ids 1-100
 
 ## <a id="requirements">Requirements</a>
 * [npm](https://www.npmjs.com/)
