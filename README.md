@@ -1,11 +1,33 @@
-# Kyle-proxy
+# Zilhome-proxy
 
-Proxy server for serving up my service as well as my cohort's services, in order to render a more robust application.
+> Zilhome, an open source real estate listing application.
 
-#FEC - Zillow clone
-
-Simple server to handle routing to the other services' servers.
+This application was built by a team, but all the work herein is my own.
 
 
-Scripts: 
- - npm start  (nodemon during dev, will update to node server)
+This module represents the combination of all services being render by this proxy service.
+
+![](zilhomeProxyBlur.jpg)
+
+## Table of Contents
+1. <a href="#how_to_use">How To Use</a>
+2. <a href="#requirements">Requirements</a>
+3. <a href="#related_projects">Related Projects</a>
+## <a id="how_to_use">How To Use</a>
+```
+# clone this repository
+$ git clone https://github.com/1021s/Kyle-proxy.git
+
+# install dependencies
+$ npm install
+
+# start express server
+$ npm start
+```
+Visit localhost:3001/
+
+
+## <a id="requirements">Requirements</a>
+* [npm](https://www.npmjs.com/)
+* [Node.js](https://nodejs.org/en/download/)
+* [Git](https://git-scm.com/)
